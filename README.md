@@ -2,7 +2,7 @@
 # ![Bitcoin](public/bitcoin.svg) BitConneeect - VG assignment
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![![Travis](https://travis-ci.org/lordoscarr/vg-assignment)](https://travis-ci.org/lordoscarr/vg-assignment.svg?branch=master)
+[![Travis](https://travis-ci.org/lordoscarr/vg-assignment.svg?branch=master)](https://travis-ci.org/lordoscarr/vg-assignment)
 
 
 BitConneeect is a small React app that fetches the latest 31 day averages of the Bitcoin currency value in US dollars. Bitconneeect is using the public [Coindesk API](https://www.coindesk.com/api).
