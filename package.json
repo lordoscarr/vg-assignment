@@ -19,7 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:coverage": "npm test -- --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,7 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "test": "CI=true react-scripts test --env=jsdom",
-  "test:coverage": "npm test -- --coverage"
+  }
 }
