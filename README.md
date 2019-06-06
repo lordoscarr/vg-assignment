@@ -7,6 +7,10 @@
 
 BitConneeect is a small React app that fetches the latest 31 day averages of the Bitcoin currency value in US dollars. Bitconneeect is using the public [Coindesk API](https://www.coindesk.com/api).
 
+## Example
+
+You can see the app running here: [https://lordoscarr.github.io/vg-assignment](https://lordoscarr.github.io/vg-assignment)
+
 ## Prerequisites
 
 #### NPM
