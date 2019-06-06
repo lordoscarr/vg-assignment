@@ -15,7 +15,9 @@ class App extends React.Component {
         data: []
       }]
     },
-    options: this.getOptions()
+    options: this.getOptions(),
+    value: 'Fetching...',
+    error: undefined
   }
 
   componentDidMount() {
@@ -75,9 +77,11 @@ class App extends React.Component {
   getData() {
     axios.get("https://api.coindesk.com/v1/bpi/historical/close.json").then((result) => {
       let data = [];
+      let latestval = 0;
       Object.entries(result.data.bpi).forEach((entry) => {
         let x = moment(entry[0]);
         let y = entry[1];
+        latestval = y;
         data.push({ x: x, y: y });
       });
 
@@ -90,9 +94,12 @@ class App extends React.Component {
             fill: true,
             data: data
           }]
-        }
+        },
+        value: '1 BTC = ' + latestval + ' USD',
+        error: undefined
       });
     }).catch((error) => {
+      this.setState({error: error});
       console.log(error);
     });
   }
@@ -100,7 +107,10 @@ class App extends React.Component {
     defaults.global.defaultFontColor = '#fff';
     return (
       <div>
-        <h1 className="titleHeader">DOLLAR - BITCOIN GRAPH</h1> 
+        <h1 className="titleHeader">DOLLAR - BITCOIN GRAPH</h1>
+        <p className="todayText">Today</p>
+        <h3 className="currentValue">{this.state.value}</h3>
+        <p className="errorMessage">{this.state.error}</p>
         <Line data={this.state.data} options={this.state.options} />
       </div>
       );

@@ -22,6 +22,10 @@ footer {
   margin: auto!important;
 }
 
+.navbar-brand:hover{
+  color: #F7931A;
+}
+
 .navbar-brand img {
   margin-right: 10px;
 }
@@ -53,4 +57,21 @@ body {
   text-align: center;
   margin-top: 1em;
   margin-bottom: .5em;
+}
+
+.currentValue{
+  text-align: center;
+  color: #fff;
+}
+
+.todayText {
+  text-align: center;
+  color: #F7931A;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.errorMessage {
+  color: red;
 }
