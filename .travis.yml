@@ -16,3 +16,12 @@ deploy:
   local_dir: build
   on:
     branch: gh-pages
+
+language:
+  node_js
+  install:
+  - npm install -g codecov
+  script:
+  - npm run test
+  - npm run report-coverage
+  - codecov
