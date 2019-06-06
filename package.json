@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Oscar Andersson",
   "repository": "https://github.com/lordoscarr/vg-assignment",
+  "homepage": "https://lordoscarr.github.io/vg-assignment/",
   "description": "Simple tool to see how the Bitcoin currency stands against the US dollar.",
   "license": "GPL-3.0",
   "private": true,
@@ -35,5 +36,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "test": "CI=true react-scripts test --env=jsdom",
+  "test:coverage": "npm test -- --coverage"
 }
