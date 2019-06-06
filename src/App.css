@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #101013;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #101013;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  margin: auto!important;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #F7931A;
+}
+
+footer a:hover {
+  color: #F7931A;
+  text-decoration: underline;
+}
+
+html {
+  background: #17181C;
+}
+
+body {
+  background-color: #17181C!important;
+  margin-bottom: 100px;
+}
+
+.titleHeader {
+  color: #F7931A;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
